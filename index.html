@@ -12,27 +12,27 @@
 <body>
 
 <header>
-    <h1>안녕하세요, 최준호입니다!</h1>
+    <h1></h1>
 </header>
 
 <section class="card">
     <h2>기본 정보</h2>
-    <p><strong>이름: </strong>최준호</p>
-    <p><strong>학번: </strong>2019136135</p>
-    <p><strong>전공: </strong>컴퓨터공학부</p>
-    <p><strong>이메일: </strong>junho5336@gmail.com</p>
+    <p><strong>이름: 이관우</strong></p>
+    <p><strong>학번: 2021136089</strong></p>
+    <p><strong>전공: 컴퓨터공학부</strong></p>
+    <p><strong>이메일: janoogwan39@gmail.com</strong></p>
     <h3>
-        <a href="https://github.com/Choi-JJunho">Github 주소</a></p>
+        <a href="https://github.com/JanooGwan">Github 주소</a></p>
     </h3>
 </section>
 
 <section class="card">
     <h2>인사말</h2>
     <p>
-        안녕하세요! 공유를 좋아하는 개발자 최준호입니다.<br>
-        저의 취미는 도전입니다. 새로운 일에 도전하는것을 항상 즐깁니다.<br>
-        최근에는 클라이밍에 흥미를 가져봤는데 꽤나 괜찮은 취미활동이라고 생각합니다<br>
-        검은 화면에 흰 글씨가 나오는 모습이 멋있어보여서 백엔드 트랙에 지원했습니다.<br>
+        안녕하세요! 유능한 프로그래머가 되고 싶은 이관우입니다.<br>
+        "안 되면 될 때까지 한다" 라는 것이 저의 좌우명입니다.<br>
+        프로그래밍에 대한 많은 경험과, 서버에 대한 이해를 키우고 싶어서 백엔드 트랙에 지원했습니다.<br>
+        Beginner 트랙을 잘 이수하여 BCSD에 꼭 필요한 인력이 되겠습니다!<br>
     </p>
 </section>
 
@@ -43,9 +43,44 @@
             <h3>
                 HTTP Method 종류를 아는대로 설명해주세요.
             </h3>
-            <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+            <div align="left">
+<br><b>GET</b><br>
+- 웹 서버의 자원(리소스)을 요청, 파라미터를 넘겨서 해당 본문을 받아옴<br>
+- 성공 시 html, xml, json 등과 함께 200(ok)등의 http 응답 반환<br>
+- 실패 시  404(not found)에러나 400(bad request)에러 발생<br>
+- 데이터를 읽을 때만 사용 수정 시에는 사용하지 않음<br>
+-> url에 파라미터들이 포함됨<br><br>
+
+<b>POST</b><br>
+- 데이터를 전송하기 위한 메소드<br>
+- 일반적으로 새로운 리소스를 생성할 때 사용<br>
+- 성공 시 200이나 201(created) http 응답 반환<br>
+- 같은 post요청 반복 시 같은 결과물 보장 X<br><br>
+
+<b>PUT</b><br>
+- 수정할 정보를 서버를 제출하여 갱신 -> 덮어쓰기<br><br>
+
+<b>PATCH</b><br>
+- 리소스의 일부만 수정<br>
+- 만약 홍길동의 학번과 주소만 변경하려면 해당 부분만 변경<br><br>
+
+<b>DELETE</b><br>
+- 웹 리소스를 제거할 때 사용<br><br>
+
+<b>HEAD</b><br>
+- GET과 동일하지만 서버에서 Body를 리턴하지 않음<br>
+- 응답의 상태 코드만 확인할 때와 같이 Resource를 받지 않고 오직 찾기만 원할 때 사용<br><br>
+
+<b>TRACE</b><br>
+- HEAD와 같이 <ins>일종의 검사용 메소드</ins><br>
+- 서버에 도달 했을 때의 최종 패킷의 요청 패킷 내용을 응답 받을 수 있음.<br>
+- 요청의 최종 수신자는 반드시 송신자에게 응답의 내용으로 수신한 메시지를 반송해야 함.<br>
+- 최초 Client의 요청에는 Body가 포함될 수 없음.<br><br>
+
+<b>OPTION</b><br>
+- 예비 요청(본 요청을 하기 전에 안전한지 미리 검사하는 것)에 사용되는 HTTP 메소드<br>
+- 서버의 지원 가능한 HTTP 메소드와 출처를 응답 받아 'CORS 정책'이라는 것을 검사하기 위한 요청<br><br>
+
             </div>
         </li>
         <li class="card">
@@ -53,18 +88,67 @@
                 인터넷과 웹의 차이에 대해 설명해주세요.
             </h3>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                <table border="1" bordercolor="black">
+		<tr>
+			<td><b>인터넷</b></td>
+			<td>TCP/IP 기반의 네트워크가 세계적으로 확대되어 연결된 네트워크들의 네트워크
+		</tr>
+		<tr>
+			<td><b>웹</b></td>
+			<td>간단히 말해 WWW(World Wide Web). HTML이라는 문서 형태와 HTTP라는 문서 전송 프로토콜, URL로 문서의 위치를 표시하는 시스템<br>웹은 인터넷의 일부라고 볼 수 있다.
+		</tr>
+		</table>
             </div>
         </li>
         <li class="card">
             <h3>
                 www.naver.com을 치면 무슨 일이 일어날까요?
             </h3>
-            <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
-            </div>
+            <div align="left">
+<img src="image1.png" style="max-width: 100%; height: auto;" alt="image1"><br>
+크게 위와 같은 과정이 이루어지게 된다.<br><br><br>
+
+[ 과정 ]<br><br>
+
+<b>1. 사용자 입력</b><br>
+우리가 주소창에 www.naver.com 이라고 입력하게 되면, 해당 주소는 URL 형식을 띄고 있기 때문에 브라우저는 웹페이지 URL이라 인식하여 이 도메인 이름에 해당하는 IP주소를 요청하게 된다.<br>
+이 때, 우리가 protocol 부분을 따로 입력하면 https나 http로 요청하지만, 만약 www.naver.com 에서 ‘www.’ 부분을 생략하고 naver.com 이라고 입력하게 된다면, 프로토콜 부분을 생략하고 바로 도메인부분을 입력하면 기본적으로 http로 요청한다.<br><br>
+
+<b>2. 도메인 네임</b><br>
+Server로 도메인 네임(naver.com)을 보내면 이걸 IP주소로 바꿔주는데, 이러한 시스템을 DNS라고 부른다.<br>
+DNS Server는 도메인들의 IP주소를 가지고 있는 데이터 서버인데, 우리는 naver.com이라는 도메인을 가지고 있는 IP주소를 DNS Server에 물어보게 된다.<br><br>
+
+<b>3. IP주소</b><br>
+2번과 같은 과정을 거치면 DNS Server로 부터 IP주소를 얻게 된다.<br><br>
+
+<b>4. HTTP 요청 메시지</b><br>
+위와 같은 과정을 통해 얻은 IP주소로 해당 페이지를 요청을 보냄.<br><br>
+
+<b>5. HTTP 요청메시지 전달</b><br>
+HTTP 요청 메시지가 TCP 통신을 통해서 네이버 서버에 요청하게 됨.<br><br>
+
+<b>웹 페이지 URL</b><br>
+네이버 서버는 개인PC로부터 HTTP 요청 메시지를 받게 됨. HTTP 요청 메시지 안에는 메소드 종류(GET), 경로, 문서 종류, 형식 종류, 헤더, 언어, 인코딩 스타일, 요청하는 컴퓨터의 브라우저 버전, 요청하는 문자의 길이 등의 정보를 담고 있다.<br><br>
+
+<b>7. 웹 페이지 데이터 전송</b><br>
+요청에 대해 네이버 서버는 응답 페이지를 보내줌.<br>HTTP 요청 메시지로 위에서 요청 했듯이, 서버도 응답 페이지와 함께 HTTP 응답 메시지로 보내주게 됨.<br><br>
+
+<b>8. HTTP 응답 메시지</b><br>
+http 응답 메시지도 요청 메시지와 비슷한 스타일로 돌아오게 됨.<br><br>
+
+<b>9. 웹 페이지 데이터</b><br>
+그 후 받아온 응답페이지 html문서를 받아서 브라우저에 넣어줌.<br><br>
+
+<b>10. 사용자 출력</b><br>
+브라우저가 반환받은 html데이터를 처리함.<br><br>
+
+<img src="image2.png" style="max-width: 100%; height: auto;" alt="image2"><br>
+위와 같은 과정을 거치게 되면,<br><br>
+
+<img src="image3.png" style="max-width: 100%; height: auto;" alt="image3"><br><br>
+최종적으로 위와 같은 화면을 출력하게 된다.<br>
+
+            </div align="left">
         </li>
     </ol>
 </section>
