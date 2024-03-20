@@ -38,11 +38,14 @@ ol {
     padding: 0;
 }
 
+
+
 li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 li img {
@@ -71,4 +74,14 @@ a:hover {
 footer {
     text-align: center;
     color: #888;
+}
+
+table, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.box {
+    text-align: left;
 }
