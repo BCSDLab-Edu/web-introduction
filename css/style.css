@@ -72,3 +72,9 @@ footer {
     text-align: center;
     color: #888;
 }
+
+div {
+    border-style: solid;
+    border-color:#c18ccf;
+    
+}

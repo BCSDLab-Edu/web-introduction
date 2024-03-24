@@ -12,27 +12,29 @@
 <body>
 
 <header>
-    <h1>안녕하세요, 최준호입니다!</h1>
+    <h1>안녕하세요, 박소영입니다!</h1>
 </header>
 
 <section class="card">
     <h2>기본 정보</h2>
-    <p><strong>이름: </strong>최준호</p>
-    <p><strong>학번: </strong>2019136135</p>
+    <p><strong>이름: </strong>박소영</p>
+    <p><strong>학번: </strong>2021136052</p>
     <p><strong>전공: </strong>컴퓨터공학부</p>
-    <p><strong>이메일: </strong>junho5336@gmail.com</p>
+    <p><strong>이메일: </strong>soyeongbag@gmail.com</p>
     <h3>
-        <a href="https://github.com/Choi-JJunho">Github 주소</a></p>
+        <a href="https://github.com/P-Soyoung">Github 주소</a></p>
     </h3>
 </section>
 
 <section class="card">
     <h2>인사말</h2>
     <p>
-        안녕하세요! 공유를 좋아하는 개발자 최준호입니다.<br>
-        저의 취미는 도전입니다. 새로운 일에 도전하는것을 항상 즐깁니다.<br>
-        최근에는 클라이밍에 흥미를 가져봤는데 꽤나 괜찮은 취미활동이라고 생각합니다<br>
-        검은 화면에 흰 글씨가 나오는 모습이 멋있어보여서 백엔드 트랙에 지원했습니다.<br>
+        안녕하세요! 21학번 컴퓨터공학부 <strong>박소영</strong>입니다!<br>
+        저의 취미는 드라마 보기, 맛있는 거 먹기, 배부르게 먹고 산책하기입니다.<br>
+        요즘 '눈물의 여왕'이라는 드라마를 보는데 매우매우 재밌으니 강추합니다!<br>
+        <img src="images/drama.jpg" width="150"><br>
+        (넷플릭스에도 있어용)<br>
+        웹을 배워보고자 프론트엔드에 지원하게 되었습니다.<br>
     </p>
 </section>
 
@@ -43,9 +45,20 @@
             <h3>
                 HTTP Method 종류를 아는대로 설명해주세요.
             </h3>
+            <strong>HTTP 메서드:</strong> 클라이언트와 서버 사이에 이뤄지는 요청과 응답 데이터를 전송하는 방식.<br>
+            <br>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                
+                <strong>GET:</strong> 리소스 조회.<br>
+                <strong>POST:</strong> 등록, 요청 데이터 처리.<br>
+                <strong>PUT:</strong> 리소스 덮어쓰기(해당 리소스가 없으면 생성).<br>
+                <strong>PATCH:</strong> 리소스 부분 변경.<br>
+                <strong>DELETE:</strong> 리소스 삭제.<br>
+                <strong>HEAD:</strong> GET과 동일하나 메시지 부분(Body)를 제외하고, 상태 줄과 헤더만 반환.<br>
+                <strong>OPTIONS:</strong> 대상 리소스에 대한 통신 가능 옵션을 설명.<br>
+                <strong>CONECT:</strong> 대상 자원으로 식별되는 서버에 대한 터널을 설정.<br>
+                <strong>TRACE:</strong> 대상 리소스에 대한 경로를 따라 메시지 루프백 테스트를 수행.<br>
+
             </div>
         </li>
         <li class="card">
@@ -53,8 +66,11 @@
                 인터넷과 웹의 차이에 대해 설명해주세요.
             </h3>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                <strong>인터넷:</strong> 컴퓨터가 서로 연결되어 통신을 주고받는 컴퓨터끼리의 네트워크.<br>
+                <strong>웹:</strong> 그 인터넷상에 정보가 얽혀있는 무형의 정보 네트워크.<br>
+                <br>
+                + 즉, 웹보다 인터넷이 더 광범위한 범주이며, 인터넷으로 여러 기능을 할 수 있는데 그 중에서 HTTP 프로토콜을 사용하는 웹이 있는 것.
+                
             </div>
         </li>
         <li class="card">
@@ -62,8 +78,15 @@
                 www.naver.com을 치면 무슨 일이 일어날까요?
             </h3>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                'www.naver.com' URL 해석<br>
+                -> 브라우저가 www.naver.com의 IP주소를 찾는다<br>
+                -> 브라우저가 해당 서버와 TCP연결을 시작한다.<br>
+                -> 브라우저가 웹 서버에 HTTP 요청을 보낸다.<br>
+                -> 서버가 요청을 처리하고 응답을 보낸다.<br>
+                -> 서버가 HTTP 응답을 보낸다<br>
+                -> 브라우저가 HTML컨텐츠를 보여준다.<br>
+               
+                
             </div>
         </li>
     </ol>
