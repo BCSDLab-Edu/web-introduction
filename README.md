@@ -1,4 +1,4 @@
-# web-introduction
+ web-introduction
 
 이번 과제는 HTML 태그를 활용한 웹페이지 제작을 수행합니다.
 이 웹페이지는 자기소개에 대한 정보와 Web에 대한 내용을 설명하는 페이지입니다.
