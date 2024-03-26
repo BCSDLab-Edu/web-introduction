@@ -12,7 +12,7 @@
 <body>
 
 <header>
-    <h1>안녕하세요, 최준호입니다!</h1>
+    <h1>안녕하세요, 김민준입니다!</h1>
 </header>
 
 <section class="card">
@@ -44,8 +44,19 @@
                 HTTP Method 종류를 아는대로 설명해주세요.
             </h3>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                HTTP에서 사용되는 대표적인 메소드는 PUT, POST, DELETE, GET이 있습니다.<br><br>
+                <h4>GET</h4>
+                GET은 서버에서 데이터를 요청할 때 사용하는 메소드이다. 성공하면 <span style="color: greenyellow;">200 응답 코드를 받을 수 있다.</span><br>
+                <span style="color: palevioletred;">GET은 멱등성을 띈다.</span>
+                <h4>POST</h4>
+                POST는 서버에 새로운 데이터를 생성할 때 주로 사용된다. 성공하면 <span style="color: greenyellow;">201 응답 코드를 받을 수 있다.</span><br>
+                <p style="color: palevioletred;">POST는 반복하면 계속해서 새로운 데이터가 생성되므로,<br>멱등성을 띄지 않는다.</p>
+                <h4>PUT</h4>
+                PUT은 서버의 데이터를 생성하거나, 업데이트를 할 때 사용한다. 단, 상태성이 없으므로 모든 내용을 포함하여 업데이트를 할 필요가 있다.<br>
+                <p style="color: palevioletred;">PUT은 반복하여도 같은 값을 같은 내용으로 수정하므로<br>멱등성을 띈다.</p>
+                <h4>DELETE</h4>
+                DELETE는 서버의 데이터를 제거할 떄 주로 사용한다.<br>
+                <p style="color: palevioletred;">DELETE는 반복하여도 같은 대상에 대한 삭제 요청이므로<br>멱등성을 띈다.</p>
             </div>
         </li>
         <li class="card">
@@ -53,8 +64,8 @@
                 인터넷과 웹의 차이에 대해 설명해주세요.
             </h3>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                인터넷은 Web을 포함하는 개념이다. IP(인터넷 프로토콜)을 이용한다면 인터넷이다.<br>
+                그중에서 HTTP 프로토콜을 사용하며 URL을 이용하는 www(World Wide Web)은 Web이다.
             </div>
         </li>
         <li class="card">
@@ -62,8 +73,8 @@
                 www.naver.com을 치면 무슨 일이 일어날까요?
             </h3>
             <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
+                www.naver.com에는 프로토콜이 적혀있지 않기 때문에 URL의 상위개념인 URI이다. <br>
+                따라서, www.naver.com을 주소창에 입력하게 되면 https://가 붙어 URL으로 자동으로 변환되어 입력된다.
             </div>
         </li>
     </ol>
