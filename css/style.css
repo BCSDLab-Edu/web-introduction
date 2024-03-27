@@ -13,42 +13,67 @@ header {
 
 section {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 8px; /*테두리 모서리 둥글게 (반지름 8px) */
+
+    /*그림자 효과 추가, 수평 0, 수직 4px, 블러 정도 8px, 그림자 색상: 흑색, 투명도 0.1*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; /*내부 여백*/
+    margin-bottom: 20px; 
     margin-left: 50px;
     margin-right: 50px;
 }
 
 h2 {
-    color: #c18ccf;
-    border-bottom: 2px solid #c18ccf;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    color: #c18ccf; /*보라색*/
+    border-bottom: 2px solid #c18ccf; /*하단 테두리를 두껍게(2px), solid 스타일, 보라색*/
+    padding-bottom: 10px; /*하단 패딩 10px 추가*/
+    margin-bottom: 20px; /*하단 마진 20px 추가*/
+}
+
+h3 {
+    color: #1E96FF; /*하늘색*/
+    border-bottom: 2px solid #FF9BD2; 
+    padding-bottom: 5px; 
+    margin-bottom: 20px; 
 }
 
 p {
-    line-height: 1.6;
+    /*text-align: right;*/
+    line-height: 1.6; /*줄 간격*/
     color: #555;
 }
 
-ol {
-    list-style-type: none;
+left {
+    text-align: left;
+    line-height: 1.6; /*줄 간격*/
+    color: #555;
+}
+
+
+ol { /*순서가 있는 항목*/
+    list-style-type: none; /**/
     padding: 0;
 }
 
-li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+li { /**/
+    display: flex; /*목록 항목-> 플렉스 박스(flexbox)로 지정. 내부 요소들을 수평 정렬*/
+    justify-content: flex-start; /*플렉스 박스의 주축(main axis)을 따라 내부 요소들을 시작 부분에 정렬*/
+    align-items: center; /*플렉스 박스의 교차축(cross axis)을 따라 내부 요소들을 가운데 정렬*/
     margin-bottom: 20px;
+}
+
+lii { /**/
+    display: flex; /*목록 항목-> 플렉스 박스(flexbox)로 지정. 내부 요소들을 수평 정렬*/
+    justify-content: flex-start; /*플렉스 박스의 주축(main axis)을 따라 내부 요소들을 시작 부분에 정렬*/
+    align-items: center; /*플렉스 박스의 교차축(cross axis)을 따라 내부 요소들을 가운데 정렬*/
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 li img {
     max-width: 100px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /**/
     margin-right: 20px;
 }
 
@@ -57,11 +82,11 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover { /**/
     text-decoration: underline;
 }
 
-.card {
+.card { /**/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,4 +96,78 @@ a:hover {
 footer {
     text-align: center;
     color: #888;
+}
+orange{
+    color: #fd5000; 
+    padding-bottom: 5px; 
+    margin-bottom: 20px;
+    border-bottom: 3px solid orange; 
+}
+green{
+    color: #0ed10e; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+}
+
+purple{
+    color: #9E329E; /*보라색*/
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+}
+
+pink{
+    color: #F088B1; /*핑크색*/
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+}
+red{
+    color: #CD1F48; /*빨간색*/
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+}
+blueB{
+    background-color: lightblue; /*하늘색*/
+    padding-bottom: 1px; 
+    margin-bottom: 20px;
+}
+grayB{
+    background-color: #B4B4DC; /*회색*/
+    padding-bottom: 1px; 
+    margin-bottom: 20px;
+}
+
+left{
+    text-align: left;
+}
+center{
+    text-align: center;
+}
+point {
+    color: gray; 
+    border-bottom: 3px solid lightgray; 
+    padding-bottom: 5px; 
+    margin-bottom: 20px; 
+    line-height: 2.0;
+    font-weight : bold;
+}
+bold{
+    font-weight : bold;
+}
+
+line {
+    border-bottom: 3px solid lightgray;
+    font-weight : bold;
+}
+.bg-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image : url("https://ifh.cc/g/81G2kJ.jpg");
+    width:100px; height:100px; border: 1px solid black;
+    background-size : 100% 100%;
+}
+
+.profile{
+
 }

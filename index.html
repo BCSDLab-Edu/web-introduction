@@ -9,31 +9,34 @@
     <title>BCSDLab Web 과제</title>
 </head>
 
-<body>
+<body> 
 
 <header>
-    <h1>안녕하세요, 최준호입니다!</h1>
+    <h1>안녕하세요, 윤해인입니다!</h1>
 </header>
 
 <section class="card">
     <h2>기본 정보</h2>
-    <p><strong>이름: </strong>최준호</p>
-    <p><strong>학번: </strong>2019136135</p>
+    <p><strong>이름: </strong>윤해인</p>
+    <p><strong>학번: </strong>2022136080</p>
     <p><strong>전공: </strong>컴퓨터공학부</p>
-    <p><strong>이메일: </strong>junho5336@gmail.com</p>
+    <p><strong>이메일: </strong>woovwave8.o0@gmail.com</p>
     <h3>
-        <a href="https://github.com/Choi-JJunho">Github 주소</a></p>
+        <a href="https://github.com/eighttontruck8/">Github 주소</a></p>
     </h3>
 </section>
 
 <section class="card">
-    <h2>인사말</h2>
-    <p>
-        안녕하세요! 공유를 좋아하는 개발자 최준호입니다.<br>
-        저의 취미는 도전입니다. 새로운 일에 도전하는것을 항상 즐깁니다.<br>
-        최근에는 클라이밍에 흥미를 가져봤는데 꽤나 괜찮은 취미활동이라고 생각합니다<br>
-        검은 화면에 흰 글씨가 나오는 모습이 멋있어보여서 백엔드 트랙에 지원했습니다.<br>
-    </p>
+    <h2>자기소개</h2>  
+    <left>
+        안녕하세요. <purple>BCSD 프론트엔드 비기너</purple> 윤해인입니다.<br>
+        평소에는 운동과 게임을 즐기고, 작년부터 사진찍는 취미를 가져보았는데<br>
+        출사를 나가서 여유롭게 힐링하는 시간을 좋아합니다. <br>
+        머릿속에만 있는 아이디어를 서비스로 직접 설계, 디자인해서<br>
+        <pink>결과물</pink>을 구현해내는 점이 멋잇다고 생각해서 <purple>프론트엔드 트랙</purple>에 지원했습니다.<br>
+        <pink>나만의 창작물</pink>을 만드는 걸 좋아합니다.<br>
+        감사합니다!<br> <br>
+    </left>
 </section>
 
 <section class="card">
@@ -41,36 +44,170 @@
     <ol>
         <li class="card">
             <h3>
-                HTTP Method 종류를 아는대로 설명해주세요.
+                Q. HTTP Method 종류를 아는대로 설명해주세요.
             </h3>
-            <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
-            </div>
+            
+                <left>
+                    
+                        <point>HTTP Method</point> <br>
+                        <blueB>: Client-Server 구조에서 request와 response가 이루어지는 방식.</blueB> <br>
+                        <point>Q. 왜 사용하는가?</point><br>
+                        : 리소스와 동작을 분리하기 위함.<br><br>
+
+                        <point>-get </point>: data 받아오기. 리스트 조회 메서드. <br>
+                        ex) URL 입력, 링크 클릭<br>
+                        *멱등성 > 여러 번 요청해도 리소스는 변하지 않음.<br><br>
+                        <point>-post </point>: 새로운 resource 생성<br>
+                        - 성공적으로 creation 완료 > 201(Created) HTTP response응답 반환<br>
+                        - get과 비교) 보안good (데이터가 외부로 노출되지 않음)<br>
+                        <br>
+                        <point>-put </point>: data 수정 - 덮어쓰기 방식. <red>- null처리</red><br>
+                        - client가 resource식별 가능<br>
+                        - 부분 수정 불가능<br>
+                        *멱등성<br><br>
+                        <point>-  patch </point>: resource의 일부만 수정 (갱신 방식)<br>
+                        - put과 같이 resource 수정 역할
+                        <br><red>- BUT resource 부분 변경한다는 점에서 차이.</red><br>
+                        - 갱신하기 때문에 null 처리되지 않는다.<br>
+                        - 멱등성X <br>
+                        - PATCH를 지원하지 않는 서버 > POST로 대체<br>
+
+                        <br>
+                        <point>-delete</point><br>
+                        : resource 제거<br>
+                        갱신이 무조건 필요한 거 아닌가? put 보다 patch?<br>
+                    
+                        *멱등성<br>
+
+                        post
+                        - patch 갱신의 위험성
+                        - ex) 은행 시스템. 돈을 보내면 잔액 변화
+                    </li>
+                </left>
+            </li>   
+            
         </li>
         <li class="card">
             <h3>
-                인터넷과 웹의 차이에 대해 설명해주세요.
+                Q. 인터넷과 웹의 차이에 대해 설명해주세요.
             </h3>
-            <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
-            </div>
+            <left>                
+                - WEB : web page들의 연결, 즉 집합체<br>
+                - WEB은 인터넷의 일부<br><br>
+                <point> 웹과 인터넷의 차이</point><br>
+
+            <bold>인터넷</bold><br>
+            TCP/IP 기반의 네트워크가 세계적으로 확대되어 연결된 <bold></bold>네트워크들의 네트워크<br><br>
+            <bold>WEB</bold><br>
+            : HTML이라는 문서 형태와 HTTP 문서 전송 프로토콜<br>
+            => URL로 문서의 위치를 표시하는 시스템<br><br>
+            - 멀리 떨어진 사람에게 문서를 주고받기 위해 탄생함.<br>
+            - 인터넷의 여러 기능 중, <line>HTTP 프로토콜을 사용하는 웹이 있는 것!</line><br><br>
+            => <orange><bold>WEB</bold>보다 <bold>인터넷</bold>이 더 광범위한 범주<br></orange>
+
+            
+            </left>
         </li>
         <li class="card">
             <h3>
-                www.naver.com을 치면 무슨 일이 일어날까요?
+                Q. www.naver.com을 치면 무슨 일이 일어날까요?
             </h3>
-            <div>
-                {위 질문에 대한 답변을 자유롭게 작성해주세요}<br>
-                HTML 태그를 적극 활용해도 좋습니다.
-            </div>
+            <left>
+                
+                <center>주소창에 <bold>"www.naver.com"</bold>을 작성 후 엔터를 치면
+                <green>Naver 메인화면</green>이 바로 나타나게 되지만,<br>
+                
+                <point>
+                    <orange>사실은 사용자에게 보이지않는, 좀 더 복잡한 과정들이 있기에 결과물이 나올 수 있다.</orange></center>
+                </point><br>
+                =====================<br>
+                <point><실행 단계></point><br>
+                1. 입력한 텍스트 정보 확인<br>
+                2. 네트워크 호출<br>
+                3. 렌더링 작업<br>
+                4. <green>naver 페이지 </green>출력<br>
+                =====================<br><br>
+
+                <point>1. 입력한 정보 확인</point><br> : 브라우저는 사용자가 주소창에 입력한 텍스트가 <bold>'검색어'</bold>인지 <bold>'URL'</bold>인지 판단한다.<br>
+                    -1. <bold>검색어</bold>라면? : 브라우저) 검색 엔진의 URL에 '검색어를 포함한 주소로 페이지'를 이동시킨다.<br>
+                    -2. 만약 <bold>URL</bold>이라면? : 브라우저 엔진) 네트워크 스레드를 통해-> 네트워크 호출을 수행한다.<br><br>
+
+                    <point>2. 네트워크 호출</point><br>
+                    Q. 브라우저가 네트워크 호출을 수행하는 이유?<br>
+                    : 브라우저가 유저에게 네이버라는 사이트를 화면에 보여주려면<br>
+                    네이버의 HTML 문서, CSS 문서, 스크립트, 이미지 등등 각종 데이터를 가지고 있어야 함.<br>
+                    하지만 이런 정보들은 브라우저가 아닌 네이버 서버 컴퓨터에 존재한다.<br>
+
+                    <point>=> 결론) 네이버 서버와 네트워크 통신을 통해 데이터들을 가져와야한다. </point><br>
+                        ㄴ서버가 어딘지 알아야 하니까 - <bold>네이버 서버가 있는 컴퓨터의 IP 주소를 파악해야한다.</bold><br><br>
+                        <bold>
+                        =======================================================<br>
+                        ➔ 네이버 서버의 주소를 알기 위한 name server와 통신<br>
+                        ➔ 알아낸 주소로 - 네이버 서버와 통신 - 원하는 데이터 받기<br>
+                        =======================================================<br>
+                        </bold>       
+                <point>- 네이버 서버의 주소를 알기 위한 DNS 서버와 통신<br></point>
+                브라우저는 캐시를 조회하여 해당 웹사이트의 IP 주소를 가지고 있는지 확인해본다.<br>
+
+                요청된 도메인 네임의 IP 주소를 찾을 수 없다면, <br>
+                첫번째로 자신(로컬)의 host 파일에서 도메인 네임 (naver.com) 에 대응 하는 IP 주소가 있는지 확인한다.<br>
+                
+                <br>URL이 host 파일 내에서도 발견되지 않으면, <br>
+                <bold>-'네이버 IP 주소 알려줘'</bold> 라는 DNS 요청을 보낸다.<br>
+
+                인터넷은 컴퓨터의 주소인 IP 주소를 기반으로 동작한다. <br><br>
+                하지만 우리가 인터넷을 사용할 땐 사용하기 쉽도록 <br>
+                <bold>IP 주소 대신 사용하기 쉬운 '문자로 이루어진 도메인 네임'</bold>을 사용한다.<br><br>
+
+            따라서 <bold>도메인 네임 ➔ IP 주소</bold>로 변환해주는 환경 <bold>DNS(Domain Name System)</bold> 가 필요함.<br>
+            <point> <orange>=> DNS Server/Name Server<br><br></orange></point>
+
+            네임 서버가 도메인 주소에 대응하는 IP 주소를 찾아준다.<br> 
+            클라이언트는 <green>naver.com</green>에 해당하는 IP 주소를 요청하고 응답 받을 수 있다.<br><br>
+
+            <point>- 알아낸 IP 주소로 네이버 서버와 통신하여 원하는 데이터 받기</point><br>
+            : 웹 사이트를 브라우저에 띄울 수 있도록 웹 서버로부터 원하는 정보들을 받아야함.<br><br>
+
+            <point>
+                [Q. 어떻게 받아올까?] <br></point>
+
+            <bold></bold>HTTP Request를 통해 요청하고,<br>
+            <bold></bold>HTTP Response를 통해 받아오면 된다.<br><br>
+
+            <point>3. 렌더링 작업<br><br></point>
+            - 네이버 서버로부터 응답받은 데이터는 <bold>바이트 형태</bold>의 텍스트 문서<br>
+            => 브라우저 엔진이 읽을 수 없음<br>
+            - 따라서 브라우저 엔진은 렌더링 엔진에게 해당 데이터를 해석하고,<br>
+            웹 페이지를 화면에 띄울 것을 요청한다.<br>
+
+            - 요청을 받은 렌더링 엔진은 받은 데이터를 바탕으로 렌더링 프로세스를 수행하고,<br> 
+            이 과정이 끝나면 브라우저 엔진 에게 작업 완료를 알린다<br><br>
+
+
+            <point>위과정을 FE 관점과 BE 관점에서 생각해보기</point><br><br>
+            <bold>1. FE</bold><br>
+            <line>: 사용자가 직접 보고 확인할 수 있는 부분.</line><br><br>
+
+            - 웹 브라우저를 통해 요청을 보내는 것, 응답을 받고 해독하여 반영하는 부분까지 <bold>프론트엔드로 간주</bold><br>
+            - 즉, 유저의 naver.com 홈페이지를 보여달라는 요청을 수행하기 위해<br>
+            <bold>필요한 데이터, 리소스</bold>를 <bold>서버에서 조회</bold>하여 화면에 띄우는 역할<br><br>
+
+            <bold>2. BE</bold><br>
+            <line>: 사용자의 눈에 보이지 않아 직접 보고 확인할 수 없다.</line> 
+            (백엔드는 <bold>프론트엔드</bold>와 반대되는 개념) <br><br>
+
+            <bold>- 백엔드</bold>는 <bold>프론트엔드</bold>에서 보내준 요청을 처리하고,<bold>다시 응답을 제공</bold>해준다.<br>
+            <bold>프론트</bold>에서 요청하는 <bold>리소스들을 가공</bold>하여 내어주는 역할<br><br>
+
+            <a href="https://velog.io/@sgjh4022/%EC%9B%B9%EA%B3%BC-%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%98-%EC%B0%A8%EC%9D%B4">출처1</a>   
+            <a href="https://velog.io/@spolice/www.naver.com%EC%9D%84-%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-%EC%B3%A4%EC%9D%84-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%BC">출처2</a>   
+            </left>
         </li>
     </ol>
 </section>
 
 <footer>
-    <p>감사합니다 :)</p>
+    <p>(2024년 03월) 2022136080 컴퓨터공학부 윤해인</p>
 </footer>
 
 </body>
